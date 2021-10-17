@@ -1,0 +1,33 @@
+@import "./variables";
+
+.container,
+.halfContainer {
+  max-width: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 16px;
+}
+
+@each $key, $value in $container-max-widths {
+  $min-width: map-get($breakpoints, $key);
+  @if $min-width {
+    @media only screen and (min-width: map-get($breakpoints, $key)) {
+      .container {
+        max-width: $value;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px 16px;
+      }
+
+      .halfContainer {
+        margin-left: auto;
+        margin-right: 0;
+        max-width: calc(#{$value} + (100vw - #{$value}) / 2);
+        width: 100%;
+        padding: 0px 0px 0px 16px;
+      }
+    }
+  }
+}
