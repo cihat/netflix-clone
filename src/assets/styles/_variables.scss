@@ -1,0 +1,36 @@
+$white: #fff;
+$smoke_white: #e5e5e5;
+$gray: #808080;
+$black: #000;
+$gray_30: rgba(255, 255, 255, 0.3);
+$mid_gray: rgba(109, 109, 110, 0.7);
+$red: #b9090b;
+
+// Padding and margin space value for each 1 to 12 values
+$space: 5px !default;
+
+//Base unit used for spacing gutters
+$base-unit: 15px;
+
+//Screen Sizes
+$screen-xs: 576px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1200px;
+$screen-xl: 1440px;
+
+$container-max-widths: (
+  "xs": 556px,
+  "sm": 748px,
+  "md": 924px,
+  "lg": 1100px,
+  "xl": 1338px,
+);
+
+$breakpoints: (
+  "xs": $screen-xs,
+  "sm": $screen-sm,
+  "md": $screen-md,
+  "lg": $screen-lg,
+  "xl": $screen-xl,
+);
