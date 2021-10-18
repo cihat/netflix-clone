@@ -28,7 +28,7 @@ const routes = [
   },
   {
     path: "/new-popular",
-    name: "Series",
+    name: "NewsAndPopular",
     component: () => import("../views/NewsAndPopular.vue"),
   },
   {
