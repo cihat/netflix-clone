@@ -1,5 +1,6 @@
 <script>
 import Icon from "./Icon";
+
 export default {
   name: "navbar",
   data() {
@@ -46,24 +47,23 @@ export default {
     </div>
     <div class="right">
       <div class="search_wrapper">
-        <icon icon="Search" size="20" color="#fff " />
+        <icon icon="Search" :size="20" color="#fff" />
         <p>ÇOCUK</p>
       </div>
       <div class="gift_icon">
-        <icon icon="GiftBox" size="20" color="#fff  " />
+        <icon icon="GiftBox" :size="20" color="#fff " />
       </div>
       <div class="notification">
-        <icon icon="NotificationBell" size="20" color="#fff " />
+        <icon icon="NotificationBell" :size="20" color="#fff" />
       </div>
       <div class="user_wrapper">
-        <icon icon="show-detail-popup" size="16" color="#fff  " />
+        <icon icon="show-detail-popup" :size="16" color="#fff " />
       </div>
       <div class="dropdown">
-        <icon icon="DownArrow" size="14" color="#fff  " />
+        <icon icon="DownArrow" :size="14" color="#fff " />
       </div>
     </div>
   </div>
-  <router-view />
 </template>
 
 <style lang="scss" scoped>
