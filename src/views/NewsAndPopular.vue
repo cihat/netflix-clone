@@ -1,5 +1,5 @@
 <template>
-  
+  <p>News and Popular Page</p>
 </template>
 
 <script>

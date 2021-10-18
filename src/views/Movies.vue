@@ -1,5 +1,5 @@
 <template>
-  
+  <p>Movies Page</p>
 </template>
 
 <script>

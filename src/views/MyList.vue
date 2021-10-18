@@ -1,5 +1,5 @@
 <template>
-  
+  <p>My List Page</p>
 </template>
 
 <script>
