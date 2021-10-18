@@ -1,11 +1,23 @@
+<script>
+import Navbar from "@/components/Navbar";
+
+export default {
+  name: "App",
+  data() {
+    return {
+      message: "Hello Vue!",
+    };
+  },
+  components: {
+    Navbar,
+  },
+};
+</script>
+
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    <p>Netflix Sans - Light - 11px</p>
-    <p>Netflix Sans</p>
+  <div id="app">
+    <navbar />
   </div>
-  <router-view />
 </template>
 
 <style lang="scss">
